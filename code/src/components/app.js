@@ -14,7 +14,8 @@ class App extends React.Component {
       return response.json()
     }).then((json) => {
       this.setState({
-        radioStations: [json.channels[0], json.channels[9], json.channels[18], json.channels[35]]
+        radioStations: [json.channels[0], json.channels[9], json.channels[18],
+          json.channels[35], json.channels[12]]
       })
     })
   }
